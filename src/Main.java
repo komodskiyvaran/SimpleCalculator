@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     static final String EXCEPTION = "throws Exception";
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String arithmeticExpression = scanner.nextLine();
         System.out.println(calc(arithmeticExpression));
