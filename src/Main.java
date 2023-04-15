@@ -9,9 +9,9 @@ public class Main {
         System.out.println(calc(arithmeticExpression));
 
     }
-    public static String calc(String input){
+    public static String calc(String input) {
         String sign;
-        String[] data = input.split("[\\-+*/]");
+        String[] data = input.split("\\s{1}+[\\-+*/]+\\s{1}");
         if (data.length != 2) systemExit();
         sign = determinationOperation(input);
         int[] number = tryParseInt(data);
